@@ -56,10 +56,6 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](img src="https://github.com/rahulguptta/manuallogistic.github.io/blob/main/MSLG_df.head5.png" height="60" width="60")
-
-<img src="https://github.com/rahulguptta/manuallogistic.github.io/blob/main/MSLG_df.head5.png" height="60" width="60" > 
-```
 <html>
     <a href="#" class="image fit"><img src="/MSLG_df.head5.png" alt="" /></a>
 </html>
