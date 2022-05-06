@@ -33,8 +33,7 @@ warnings.filterwarnings('ignore')
 
 # Importing the data
 df = pd.read_csv('heart.csv')
-```
-```python
+
 #The simple overview of the data is
 df.head(5)
 ```
