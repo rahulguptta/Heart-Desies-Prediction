@@ -1,26 +1,46 @@
 ## Introduction
-1. This is project about creating personal Logistic regression classifier and Comparing the performance with the model creation using the inbuilt library scikit learn.
+- This is project about creating personal Logistic regression classifier and Comparing the performance with the model creation using the inbuilt library scikit learn.
 
-2. The dataset for this procject is "Heart Failure Prediction Dataset" downloaded from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).
+- The dataset for this procject is "Heart Failure Prediction Dataset" downloaded from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).
 
-3. The outflow of the project is as:
+- The outflow of the project is as:
 
-  a. Overview of the data 
+    a. Overview of the data 
 
-  b. Visualization
+    b. Visualization
 
-  c. Data Processing
+    c. Data Processing
 
-  d. Classifier Modeling
+    d. Classifier Modeling
 
-  e. Classifier using Scikit learn
+    e. Classifier using Scikit learn
+
+    f. Comparision and coclustion
   
-  f. Comparision and coclustion
-  
-### Markdown
+## Overview of the data 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```python
+# Imporiting the required libraries
 
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib import style
+plt.style.use('dark_background')
+import warnings
+warnings.filterwarnings('ignore')
+
+# Importing the data
+df = pd.read_csv('heart.csv')
+```
+```python
+#The simple overview of the data is
+df.head(5)
+```
+```markdown
+![Image](src)
+```
 ```markdown
 Syntax highlighted code block
 
