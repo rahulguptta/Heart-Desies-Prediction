@@ -38,7 +38,7 @@ df = pd.read_csv('heart.csv')
 df.head(5)
 ```
 ```markdown
-![First five row of dataset](https://github.com/rahulguptta/manuallogistic.github.io/blob/main/MSLG_df.head(5).png?raw=true)
+![First five row of dataset](MSLG_df.head(5).png)
 ```
 ```markdown
 Syntax highlighted code block
