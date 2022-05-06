@@ -1,9 +1,22 @@
 ## Introduction
+1. This is project about creating personal Logistic regression classifier and Comparing the performance with the model creation using the inbuilt library scikit learn.
 
-You can use the [editor on GitHub](https://github.com/rahulguptta/rahulguptta.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+2. The dataset for this procject is "Heart Failure Prediction Dataset" downloaded from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+3. The outflow of the project is as:
 
+  a. Overview of the data 
+
+  b. Visualization
+
+  c. Data Processing
+
+  d. Classifier Modeling
+
+  e. Classifier using Scikit learn
+  
+  f. Comparision and coclustion
+  
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
