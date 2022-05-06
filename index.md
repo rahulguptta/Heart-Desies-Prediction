@@ -38,7 +38,7 @@ df = pd.read_csv('heart.csv')
 df.head(5)
 ```
 <html>
-    <a href="#" class="image fit"><img src="/MSLG_df.head5.png" alt="" /></a>
+    <a href="#" class="image fit"><img src="/MSLG_df.head5.png" alt="Top five rows of the dataset" /></a>
 </html>
 
 ```markdown
