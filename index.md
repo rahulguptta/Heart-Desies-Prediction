@@ -38,8 +38,10 @@ df = pd.read_csv('heart.csv')
 df.head(5)
 ```
 <html>
-    <a href="#" class="image fit"><img src="/MSLG_df.head5.PNG" alt="" /></a>
+    <a href="#" class="image fit"><img src="/MSLG_df.head5.png" alt="" /></a>
 </html>
+
+![](/MSLG_df.head5.png)
 
 ```markdown
 Syntax highlighted code block
