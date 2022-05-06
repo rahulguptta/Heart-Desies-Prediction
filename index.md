@@ -37,9 +37,10 @@ df = pd.read_csv('heart.csv')
 #The simple overview of the data is
 df.head(5)
 ```
-```markdown
-![First five row of dataset](MSLG_df.head(5).png)
-```
+<html>
+    <a href="#" class="image fit"><img src="/MSLG_df.head5.png" alt="" /></a>
+</html>
+
 ```markdown
 Syntax highlighted code block
 
@@ -59,7 +60,9 @@ Syntax highlighted code block
 
 <img src="https://github.com/rahulguptta/manuallogistic.github.io/blob/main/MSLG_df.head5.png" height="60" width="60" > 
 ```
-
+<html>
+    <a href="#" class="image fit"><img src="/MSLG_df.head5.png" alt="" /></a>
+</html>
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Jekyll Themes
