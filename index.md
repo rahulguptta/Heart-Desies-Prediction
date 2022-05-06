@@ -1,5 +1,5 @@
 ## Introduction
-- This is project about creating personal Logistic regression classifier and Comparing the performance with the model creation using the inbuilt library scikit learn.
+- This is project about creating self Logistic regression classifier using python and Comparing the performance with the model created using the inbuilt library scikit learn.
 
 - The dataset for this procject is "Heart Failure Prediction Dataset" downloaded from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).
 
