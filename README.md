@@ -1,4 +1,5 @@
-# manuallogistic.github.io
+# Logistic regrssion
+
 tararaa
 
 [](\index.ipynb)
