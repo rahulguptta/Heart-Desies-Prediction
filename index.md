@@ -46,12 +46,17 @@ df.info()
 ![](images/MSLG_df.info.png)
 
 **Observations**
-	1. 918 samples with zero null 
-	2. 11 features where 
-		**One float** - ('Oldpeak')
-		**Five  int** - ('Age', 'RestingBP', 'Cholesterol', 'FastingBS', 'MaxHR')
-		**Five  Object** -  ('Sex', 'ChestPainType', 'RestingECG', 'ExerciseAgina')
 
+	1. 918 samples with zero null 
+	
+	2. 11 features where 
+
+		**One float** - ('Oldpeak')
+		
+		**Five  int** - ('Age', 'RestingBP', 'Cholesterol', 'FastingBS', 'MaxHR')
+		
+		**Five  Object** -  ('Sex', 'ChestPainType', 'RestingECG', 'ExerciseAgina')
+		
 Ok, so we have our features and their type. As there are no null value, we will check if Object features have any typo. We will also check if the float or float type features have any nan values. 
 
 ```python
@@ -61,10 +66,15 @@ for col in features_cat.columns:
   print(col, df[col].unique())
 ```
 **Output**
-*Sex ['M' 'F']
-ChestPainType ['ATA' 'NAP' 'ASY' 'TA']
-RestingECG ['Normal' 'ST' 'LVH']
-ExerciseAngina ['N' 'Y']
+
+*Sex ['M' 'F']*
+
+*ChestPainType ['ATA' 'NAP' 'ASY' 'TA']*
+
+*RestingECG ['Normal' 'ST' 'LVH']*
+
+*ExerciseAngina ['N' 'Y']
+
 ST_Slope ['Up' 'Flat' 'Down']*
 
 
@@ -84,13 +94,24 @@ for col in feature_num.columns:
   print(col, len(df[col].unique()))
 ```
 **Output**
-*Age 50
-RestingBP 67
-Cholesterol 222
-FastingBS 2
-MaxHR 119
-Oldpeak 53
-HeartDisease 2*
+
+**Output**
+
+*Age 50*
+
+*RestingBP 67*
+
+*Cholesterol 222*
+
+*FastingBS 2*
+
+
+*MaxHR 119*
+
+*Oldpeak 53*
+
+*HeartDisease 2*
+
 
 Looks like 'FasingBS' is also a categorical variable. Therefore, there are total 6 categorical variables (1 int and 5 objects.)
 
