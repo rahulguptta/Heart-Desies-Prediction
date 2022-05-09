@@ -2,4 +2,4 @@
 
 tararaa
 
-[](\index.ipynb)
+[See the project](\index.ipynb)
