@@ -236,7 +236,7 @@ sns.scatterplot(x = 'Age', y = 'Cholesterol', data = xy1, marker = 'o', color = 
 sns.scatterplot(x = 'Age', y = 'Cholesterol', data = xy0, marker = 'o', color = 'red', label = '0');
 plt.show()
 ```
-![](D:\ML\Logistic (M vs S)\images\a9fb547c24449e23d204ff8e85c092b9d0c712af.png)
+![](\images\a9fb547c24449e23d204ff8e85c092b9d0c712af.png)
 
 ------
 
@@ -249,7 +249,7 @@ Let us see now if there is any correlation among the features.
 sns.heatmap(df.corr(), annot = True)
 ```
 
-![](images\70b6403286511fd879cd7dccd5126ca1efd7c328.png)
+![](\images\70b6403286511fd879cd7dccd5126ca1efd7c328.png)
 
 **Observations**
 
@@ -288,7 +288,7 @@ sns.swarmplot(x='Age', y='Cholesterol', hue = 'Sex', data = df);
 plt.show();
 ```
 
-![](images\f6a49c8a275bf7979a99e1457f3e76dbcafd36f2.png)
+![](\images\f6a49c8a275bf7979a99e1457f3e76dbcafd36f2.png)
 
 ### Distribution of Continuous Variables
 
@@ -300,15 +300,15 @@ for col in ['Age', 'RestingBP', 'Cholesterol', 'MaxHR', 'Oldpeak']:
   plt.show()
 ```
 
-![](D:\ML\Logistic (M vs S)\images\2a48297ba3aaccde6c61493cc8730d5c7337810d.png)
+![](\images\2a48297ba3aaccde6c61493cc8730d5c7337810d.png)
 
-![5ff16eee992b6e7c1fed52c1b75d020a4f9b09bb](D:\ML\Logistic (M vs S)\images\5ff16eee992b6e7c1fed52c1b75d020a4f9b09bb.png)
+![](\images\5ff16eee992b6e7c1fed52c1b75d020a4f9b09bb.png)
 
-![6becf59c94e5d8663aca6be06d7f5f07255dbcea](D:\ML\Logistic (M vs S)\images\6becf59c94e5d8663aca6be06d7f5f07255dbcea.png)
+![](\images\6becf59c94e5d8663aca6be06d7f5f07255dbcea.png)
 
-![a2ea88a89a3b12c6e0f9c35acd6de3745c28d86d](D:\ML\Logistic (M vs S)\images\a2ea88a89a3b12c6e0f9c35acd6de3745c28d86d.png)
+![](\images\a2ea88a89a3b12c6e0f9c35acd6de3745c28d86d.png)
 
-![aa407a749f57c648aa575409c94316959d198294](D:\ML\Logistic (M vs S)\images\aa407a749f57c648aa575409c94316959d198294.png)
+![](\images\aa407a749f57c648aa575409c94316959d198294.png)
 
 **Observations**
 
@@ -692,7 +692,7 @@ plt.show()
 print(reports)
 ```
 
-![](D:\ML\Logistic (M vs S)\images\233e1b2ff6f56576e2b6567b2e2810a90ace0344.png)
+![](\images\233e1b2ff6f56576e2b6567b2e2810a90ace0344.png)
 <div class="output stream stdout">
 <pre><code>      eta  accuracy  precision    recall  F-1 Score
 0  0.0001  0.749091   0.734375  0.728682   0.731518
@@ -736,7 +736,7 @@ Actual 1          35          94
 </code></pre>
 </div>
 
-![](D:\ML\Logistic (M vs S)\images\21dfcae8692c332f8c1899f0c8dc27e750b0338c.png)
+![](\images\21dfcae8692c332f8c1899f0c8dc27e750b0338c.png)
 
 ## Classifier Modeling using Sklearn
 
