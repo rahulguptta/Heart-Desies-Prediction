@@ -540,6 +540,7 @@ print("\n", "Sample Target vector: ", "\n\n", Y[:10],  '\n\n', 'Size = ', (n))
  [0 1 0 1 0 0 0 0 1 0] 
 
  Size =  918 
+ </div></pre></code>
 
 ### Splitting into test and train
 
