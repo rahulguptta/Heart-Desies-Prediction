@@ -506,18 +506,6 @@ features.head(5)
 It is known that the hypothesis function for Logistic regression classifier is
 ![](/images/math1.png)
 
-h(X) = \frac{1}{1 + e^{-Z}}, where Z = X\theta
-
-Let the dataset has $m$ features and $n$ samples then,
-
-- $h(X)$ -> Vector of size $n$
-
-- $\theta$ is a constant vector with $m+1$ co-ordinates
-
-- $Z$ -> Vector of size $n$
-
-- $X$ is the features matrix where the first column has entry 1 in every row therefore the size of $X$ is $n \times (m+1)$
-
 ```python
 n = features.shape[0] #number of samples
 m = features.shape[1] #number of features
@@ -567,18 +555,7 @@ ytest = Y[ntrain:]
 ```
 
 ### Functions involved in Logistic regression
-
-- Hypothesis function: $h(x) = \frac{1}{1 + e^{-z}}$ --> predictedvalue
-
-- $Z = X\theta$
-
-- Cost Function: $J(\theta) = -\frac{1}{n}[y^T log(h(x)) + (1-y)^T log(1 - h(x))]$, where $y$ is actual value
-
-- As the minimization of the cost function is not a simple function, either Newton Raphson or the gredient descent method would be used to solve.
-
-- Gradient function: $\nabla _\theta J(\theta) =  x^T(y - h(x))$
-
-- Getting the optimized theta: $\theta _{new} = \theta _{old} - \eta \{x^T(y-h(x))\}$, where $\eta$ is learing rate
+![](/images/math2.png)
 
 ```python
 # Hypothesis function
