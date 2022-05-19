@@ -504,8 +504,9 @@ features.head(5)
 ### Converting the data into matrix form
 
 It is known that the hypothesis function for Logistic regression classifier is
+![](/images/math1.png)
 
-  $ h(X) = \frac{1}{1 + e^{-Z}}$, where $Z$ = $X\theta$
+h(X) = \frac{1}{1 + e^{-Z}}, where Z = X\theta
 
 Let the dataset has $m$ features and $n$ samples then,
 
