@@ -202,7 +202,9 @@ ST_Slope [&#39;Up&#39; &#39;Flat&#39; &#39;Down&#39;]
  Number of nans 0
 </code></pre>
 </div>
-**Observations: ** Therefore, no typos and no nan values are present.
+**Observations** 
+
+Therefore, no typos and no nan values are present.
 
 Now we will see how many categorical variable are present in our dataset.
 ```python
