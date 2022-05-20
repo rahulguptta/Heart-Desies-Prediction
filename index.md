@@ -1,13 +1,13 @@
-# Heart Disease Prediction by manually created Logistic Regression 
+# Heart Disease Prediction
 
 
 ## Introduction
 
-- This is project about creating self Logistic regression classifier using python and Comparing the performance with the model created using the inbuilt library scikit learn.
+- A self Logistic regression classifier will be created and will be Compared the performance with the model created using the inbuilt library scikit learn.
 
 - The dataset for this project is "Heart Failure Prediction Dataset" downloaded from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).
 
-- The goal project is creating a classifier using logistic regression to predict if a has hear disease. 
+- The goal of the classifier predicting if a person has heart disease or not. 
 
 - The outflow of the project is as:
 
