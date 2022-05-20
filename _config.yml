@@ -1,2 +1,4 @@
+
+theme: jekyll-theme-cayman
 title: Heart Disease Prediction 
-Classification Using Logistic Regression (Manual Scripting Vs Scikit-learn)
+Description: Classification Using Logistic Regression (Manual Scripting Vs Scikit-learn)
