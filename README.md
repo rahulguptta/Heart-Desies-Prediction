@@ -1,3 +1,6 @@
+# Heart Disease Prediction
+
+
 ## Introduction
 
 - This is project about creating self Logistic regression classifier using python and Comparing the performance with the model created using the inbuilt library scikit learn.
