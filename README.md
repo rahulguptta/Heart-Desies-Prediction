@@ -1,4 +1,4 @@
-# Heart Disease Prediction
+# Heart Disease Prediction by manually created Logistic Regression 
 
 
 ## Introduction
