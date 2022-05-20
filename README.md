@@ -21,7 +21,7 @@
 
     e. Classifier using Scikit learn
 
-    f. Comparison and conclusion
+    f. Comparison And conclusion
 
 ## Overview of the data 
 
