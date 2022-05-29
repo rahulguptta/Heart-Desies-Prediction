@@ -327,7 +327,10 @@ for col in ['Age', 'RestingBP', 'Cholesterol', 'MaxHR', 'Oldpeak']:
 
 ## Data Processing
 
-First of all we will split the features from target variable. The features which have categorical values will be encoded such that the features will be turned into binary features that are “one-hot” encoded, meaning that if a feature is represented by that column, it receives a 1 Otherwise, it receives a 0.
+As we are done with the visualization, we will move to the step which is required for creating the classifier. As there are no null, typo and not much skewness in the features we will not need any kind of cleaning. We will only encode the categorical variables so that it could pass for training purpose. We will also scale the numerical features between 1 and 0, so that no feature play extra role more than it plays actually (otherwise classifier will have the tendency to get baised towardss features having high numerical values). For training the data we will need a train set. For creating the classifier we need the target variable and features. First of all we will split the features and target variable. The features which have categorical values will be encoded such that the features will be turned into binary features (i.e., “one-hot” encoding). This means, if a feature has five unique categories then this feature will be splitted into five different features and every feature will have binary values only. Every feature receives 1 and 0 like present and absent. So the steps are
+- Feature and Target split
+- Encodeing the categorical features
+- Scalling the numerical features
 
 ```python
 # Separating the features and Target
