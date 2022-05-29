@@ -275,8 +275,8 @@ plt.show()
 **Observations**
 
 - The first thing is that the data has more samples of male than female. 
-
-- Heart Disease is possible for every range of cholesterol level.
+- Looks like more male have heart problem than female and the tendency of having heart disease increases with age.
+- Female mostly get heart disease after 50 but the chance of getting heart disease in male starts even after 40.
 
 
 #### Do men have more cholesterol than women?
@@ -296,10 +296,8 @@ plt.show();
 **Observations**
 
 - The cholesterol level in both male and female female is arround 200 to 300. 
+- Heart Disease is possible for every range of cholesterol level.
 
-- Looks like more male have heart problem than female and the tendency of having heart disease increases with age.
-
-- Female mostly get heart disease after 50 but the chance of getting heart disease in male starts even after 40.
 
 ### Distribution of Continuous Variables
 
