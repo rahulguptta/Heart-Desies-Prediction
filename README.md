@@ -3,11 +3,11 @@
 
 ## Introduction
 
-- A self Logistic regression classifier will be created and will be Compared the performance with the model created using the inbuilt library scikit learn.
+- A self Logistic regression classifier is created manually. The performance of this classifier has been Compared with the inbuilt Logistic regression classifier.
 
 - The dataset for this project is "Heart Failure Prediction Dataset" downloaded from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).
 
-- The goal of the classifier predicting if a person has heart disease or not. 
+- The goal of the classifier is predicting if a person has heart disease or not based on the features like Obesity, Cholesterol level, Blood Suger, Age, Sex and so on.
 
 - The outflow of the project is as:
 
@@ -145,7 +145,7 @@ df.head(5)
 </center>
 
 ```python
-#Getting a genera information about the features
+#Getting a general information about the features
 df.info() 
 ```
 <div class="output stream stdout">
@@ -172,9 +172,9 @@ memory usage: 86.2+ KB
 </div>
 **Observations**
 
-1. 918 samples with zero null 
+1. The data has 918 samples and fortunately, there are no null values.
 
-2. 11 features where 
+2. Target Variable "HeartDisease" and total 11 features where 
 
     **float** - ('Oldpeak')
 
@@ -185,12 +185,12 @@ memory usage: 86.2+ KB
 Ok, so we have our features and their type. As there are no null value, we will check if Object features have any typo. We will also check if the float or float type features have any nan values. 
 
 ```python
-#Categorical
+# Unique values in object type features
 features_cat = df.select_dtypes(include = ['object'])
 for col in features_cat.columns:
   print(col, df[col].unique())
 
-#nan
+# Checking nan values
 print('\n', 'Number of nans', df.isna().sum().sum())
 ```
 <div class="output stream stdout">
@@ -206,7 +206,7 @@ ST_Slope [&#39;Up&#39; &#39;Flat&#39; &#39;Down&#39;]
 
 Therefore, no typos and no nan values are present.
 
-Now we will see how many categorical variable are present in our dataset.
+There are some numerical features. But some of these numerical features will have values like 0 and 1. Those are actually the categorical features. We will see how many categorical variable are present in our dataset and there unique values as later we will need to encode them.
 ```python
 #Checking if categorical
 feature_num = df.select_dtypes(include = [np.number])
@@ -263,7 +263,7 @@ sns.heatmap(df.corr(), annot = True)
 
 There are many things can be explored with the visualizations only. Some observations are listed below:
 
-1. Is heart disease gender biased?
+#### Is heart disease gender biased?
 
 ```python
 sns.swarmplot(x='Sex', y='Age', hue = 'HeartDisease', data = df);
@@ -274,13 +274,12 @@ plt.show()
 
 **Observations**
 
-- The first thing is the data has more samples of Male than female. 
+- The first thing is that the data has more samples of male than female. 
 
-- Look like Male have more heart problem than female and the tendency of having heart disease increases with age.
+- Heart Disease is possible for every range of cholesterol level.
 
-- Female mostly get heart disease after 50 but the chance of getting heart disease in male starts even after 40.
 
-2. Do men have more cholesterol than women?
+#### Do men have more cholesterol than women?
 
 ```python
 sns.swarmplot(x='Sex', y='Cholesterol', hue = 'HeartDisease', data = df);
@@ -293,6 +292,14 @@ plt.show();
 ```
 
 ![](/images/f6a49c8a275bf7979a99e1457f3e76dbcafd36f2.png)
+
+**Observations**
+
+- The cholesterol level in both male and female female is arround 200 to 300. 
+
+- Looks like more male have heart problem than female and the tendency of having heart disease increases with age.
+
+- Female mostly get heart disease after 50 but the chance of getting heart disease in male starts even after 40.
 
 ### Distribution of Continuous Variables
 
