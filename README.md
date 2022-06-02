@@ -304,7 +304,7 @@ plt.show();
 ```python
 # Distribution of Continuous Variables
 plt.style.use('dark_background')
-for col in ['Age', 'RestingBP', 'Cholesterol', 'MaxHR', 'Oldpeak']:
+for col in ['RestingBP', 'Age', 'Oldpeak', 'MaxHR', 'Cholesterol']:
   sns.kdeplot(df[col]);
   plt.show()
 ```
