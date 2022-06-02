@@ -325,7 +325,13 @@ for col in ['RestingBP', 'Age', 'Oldpeak', 'MaxHR', 'Cholesterol']:
 
 ## Data Processing
 
-As we are done with the visualization, we will move to the step which is required for creating the classifier. As there are no null, typo and not much skewness in the features we will not need any kind of cleaning. We will only encode the categorical variables so that it could pass for training purpose. We will also scale the numerical features between 1 and 0, so that no feature play extra role more than it plays actually (otherwise classifier will have the tendency to get baised towardss features having high numerical values). For training the data we will need a train set. For creating the classifier we need the target variable and features. First of all we will split the features and target variable. The features which have categorical values will be encoded such that the features will be turned into binary features (i.e., “one-hot” encoding). This means, if a feature has five unique categories then this feature will be splitted into five different features and every feature will have binary values only. Every feature receives 1 and 0 like present and absent. So the steps are
+As we are done with the visualization, we will move to the step which is required for creating the classifier. As there are no null, typo and not much skewness in the features we will not need any kind of cleaning.
+
+We will only encode the categorical variables so that it could pass for training purpose. We will also scale the numerical features between 1 and 0, so that no feature play extra role more than it plays actually (otherwise classifier will have the tendency to get baised towards features having high numerical values). For training the data we will need a train set. 
+
+For creating the classifier we need the target variable and features. First of all we will split the features and target variable. The features which have categorical values will be encoded such that every feature will be turned into binary features (i.e., “one-hot” encoding). This means, if a feature has five unique categories then this feature will be splitted into five different features (i.e., one category will become one feature column) and every feature will have binary values only. Every feature receives 1 and 0 like present and absent. 
+
+So the overall steps are
 - Feature and Target split
 - Encodeing the categorical features
 - Scalling the numerical features
@@ -509,7 +515,7 @@ features.head(5)
 
 - We can see that the feature "ChestPainType" is turned into 'ChestPainType_ATA', 'ChestPainType_NAP', 'ChestPainType_ASY', and 'ChestPainType_TA'. Similarly the other categorical features are also converted.
 - Therefore, now every categorical feature is encoded with 0 and 1. 
-- Every Numerical feature is scaled using between 0 and 1
+- Every Numerical feature is scaled between 0 and 1
 - Now the dataset is ready for preparing the model.
 
 ## Classifier Modeling
@@ -693,7 +699,7 @@ print(reports)
 </div>
 **Observations**
 
-- The optimization in this case is best for learning rate (eta) = 0.1
+- The optimization in this case is fast for learning rate (eta) = 0.1. The cost function gets settled after 10000 iteration in this case. 
 - The accuracy of the classifier is approximately same for all the learning rates.
 - As this the project on the prediction of Heart disease, we would like the maximum recall (i.e., maximum of the sample should be detected positive if it is actually positive)
 - The maximum recall can be obtained using eta = 0.0001.
@@ -781,6 +787,8 @@ weighted avg       0.84      0.84      0.84       276
 
 ## Comparison and Conclusion
 
-- The accuracy of the model created manually is 0.8 (eta = 0.0001) and the accuracy of the model created using Sklearn is 08.
-- The recall of the model created manually is 0.8 (eta = 0.0001) and the recall of the model created using Sklearn is 08.
-- The Sklearn Model performs slightly better than the model created manualy.
+- We successfullly created the classifier and the results do not have much difference from in built model in terms of recall.
+- The Sklearn Model performs slightly better than the model created manually.
+- The accuracy of the model created manually is approximately 0.75 (eta = 0.0001) and the accuracy of the model created using Sklearn is 0.84.
+- The recall of the model created manually is 0.73 (eta = 0.0001) and the recall of the model created using Sklearn is 0.77.
+
