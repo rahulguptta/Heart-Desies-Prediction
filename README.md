@@ -789,6 +789,6 @@ weighted avg       0.84      0.84      0.84       276
 
 - We successfullly created the classifier and the results do not have much difference from in built model in terms of recall.
 - The Sklearn Model performs slightly better than the model created manually.
-- The accuracy of the model created manually is approximately 0.75 (eta = 0.0001) and the accuracy of the model created using Sklearn is 0.84.
-- The recall of the model created manually is 0.73 (eta = 0.0001) and the recall of the model created using Sklearn is 0.77.
+- The accuracy of the classifier created manually is approximately 0.75 (eta = 0.0001) and the accuracy of the classifier created using Sklearn is 0.84.
+- The recall of the classifier created manually is 0.73 (eta = 0.0001) and the recall of the classifier created using Sklearn is 0.77.
 
